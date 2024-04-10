@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ========================================== custom css ========================================== -->
+    <link rel="stylesheet" href="style.css" />
+    <title>tabs</title>
+</head>
+<body>
+    <div class="project-description-container">
+        <h2 class="headline">os info tabs</h2>
+        <p class="description">commonly used popular operating systems</p>
+    </div>
+    <!-- ================================= navigation tabs buttons ================================= -->
+    <div class="navigationbtns-alltabs-parentcontainer">
+        <div class="navigationbtns-tabscontainer-parent">
+            <div class="navigationbtns-tabscontainer">
+                <button class="navigationtab-btn" data-navigationtabs="windows">windows</button>
+                <button class="navigationtab-btn" data-navigationtabs="macos">mac</button>
+                <button class="navigationtab-btn" data-navigationtabs="linux">linux</button>
+            </div>
+        </div>
+        <!-- ================================= navigation tabs content container ================================= -->
+        <div class="alltabs-container">
+            <div class="tab-container" id="windows">
+                <div class="photobox">
+                    <img src="images/windows_logo.png" alt="windows logo pic" class="os-logo">
+                </div>
+                <div class="tab-contentbox">
+                    <h2 class="tab-headline">windows</h2>
+                    <p class="tab-content">Windows, developed by Microsoft, stands as a pioneering operating system that has revolutionized personal computing since its inception. Its user-friendly interface, coupled with robust security features, makes it a top choice for both enterprise and personal use.</p>
+                </div>
+            </div>
+            <div class="tab-container" id="macos">
+                <div class="photobox">
+                    <img src="images/macos_logo.png" alt="mac logo pic" class="os-logo">
+                </div>
+                <div class="tab-contentbox">
+                    <h2 class="tab-headline">mac os</h2>
+                    <p class="tab-content">macOS, Apple Inc.'s flagship operating system, is renowned for its sleek interface and robust performance. It offers a seamless experience across all Apple devices, enhancing productivity and user engagement. The system is built on a UNIX foundation, which provides stability and security.</p>
+                </div>
+            </div>
+            <div class="tab-container" id="linux">
+                <div class="photobox">
+                    <img src="images/linux_logo.png" alt="linux logo pic" class="os-logo">
+                </div>
+                <div class="tab-contentbox">
+                    <h2 class="tab-headline">linux</h2>
+                    <p class="tab-content">Linux is a robust, open-source operating system that underpins much of the modern digital world, from servers to smartphones. Renowned for its stability and security, Linux is the platform of choice for developers and enterprises alike.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========================================== custom js ========================================== -->
+    <script src="main.js"></script>
+  </body>
+</html>

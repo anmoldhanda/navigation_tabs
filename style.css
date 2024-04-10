@@ -1,0 +1,121 @@
+/* ====================================================== google fonts ====================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap");
+
+:root {
+  --white-color: #ffffff;
+  --light-grey-color: #677483;
+  --blue-color: cornflowerblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass Mono", monospace;
+}
+
+.project-description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+
+.headline {
+  font-weight: 600;
+}
+
+.description {
+  font-weight: bold;
+  color: var(--light-grey-color);
+}
+
+.navigationbtns-alltabs-parentcontainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navigationbtns-tabscontainer-parent::after {
+  content: "";
+  display: block;
+  background: var(--light-grey-color);
+  height: 2px;
+}
+
+/* ======================================= navigation tabs button ======================================= */
+.navigationbtns-tabscontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.navigationtab-btn {
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.active-navigationtab-btn {
+  color: var(--blue-color);
+  position: relative;
+}
+
+.active-navigationtab-btn::after {
+  content: "";
+  display: block;
+  height: 5px;
+  border-radius: 25%;
+  width: 100%;
+  background-color: var(--blue-color);
+  position: absolute;
+  top: 17px;
+}
+
+/* ======================================== navigation tabs content contaner ======================================== */
+.alltabs-container {
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
+.tab-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 10px;
+  margin: 1rem 0;
+  box-shadow: 0 0 10px 6px #d5d5d5;
+  display: none;
+}
+
+.photobox {
+  height: 10em;
+  width: 50em;
+  object-fit: cover;
+  object-position: center;
+}
+
+.os-logo {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.tab-headline {
+  text-transform: capitalize;
+  color: #363949;
+  font-weight: normal;
+}
+
+.tab-content {
+  color: var(--light-grey-color);
+  text-align: justify;
+}
