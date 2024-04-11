@@ -1,6 +1,6 @@
 const all_navigationtab_btns = document.querySelectorAll(".navigationtab-btn");
 all_navigationtab_btns.forEach((single_navigation_tab_btn) => {
-  single_navigation_tab_btn.addEventListener("click", () => {
+  single_navigation_tab_btn.addEventListener("click", (e) => {
     // ====================================================== when clicked on the iterated tab btn then it will take the tab name from it's custom attribute's by using dataset.attributename & in our case is navigationstabs ======================================================
     const tab_btn_name = single_navigation_tab_btn.dataset.navigationtabs;
     // ====================================================== set the id of tab container the same as the attribute's value so that's why getting by id is tabname bcuz attrib='osname' id="osname" like this ======================================================
